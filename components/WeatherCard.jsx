@@ -37,10 +37,12 @@ const WeatherCard = (props) => {
                 </p>
             </div>
             <div className="weather-card__body">
-                <h3 className="weather-card__body__temp">
-                    Current: {weather.current.temp_f}°F<br></br>
+                <h2 className="weather-card__body__temp">
+                    {weather.current.temp_f}°F
+                </h2>
+                <p className="weather-card__body__feels">
                     Feels Like: {weather.current.feelslike_f}°F
-                </h3>
+                </p>
                 <div className="weather-card__body__icon">
                     <Image
                         width={64}
